@@ -1,5 +1,6 @@
-function sayHello(name){
-    console.log('Hello ' + name);
-}
+console.log(__filename);
+console.log(__dirname);
 
-sayHello('Alison');
+const log = require('./logger');
+
+log("teste de utiização do require")

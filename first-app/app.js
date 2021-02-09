@@ -1,6 +1,7 @@
-console.log(__filename);
-console.log(__dirname);
+// obtem o path de um objeto no node
 
-const log = require('./logger');
+const path = require('path');
 
-log("teste de utiização do require")
+const pathObj = path.parse(__filename);
+
+console.log(pathObj);
